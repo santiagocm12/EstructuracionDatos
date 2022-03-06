@@ -36,6 +36,11 @@ public class Dados {
 		return resultado;
 
 	}
+	
+	public int ValorDados() {
+		this.total = number1+number2;
+		return total;
+	}
 
 	public boolean NumPar() {
 		if (number1 == number2) {

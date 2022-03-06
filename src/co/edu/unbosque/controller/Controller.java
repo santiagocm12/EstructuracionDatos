@@ -164,6 +164,7 @@ public class Controller {
 					}
 
 				}
+				// JUGADOR1
 				if (player1 == player2) {
 					view.showResults("ERROR: Debe reiniciar el juego");
 				} else {
@@ -177,6 +178,12 @@ public class Controller {
 						if (resultado1 == true) {
 
 							view.showResults("\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+
+							view.pressEnter("\nJugador 1, presione ENTER para mover la ficha");
+							int numdado = classDados.getTotal();
+							System.out.println("El total de los dados es: " + classDados.ValorDados());
+							classParchis.MovePlayer(classParchis.getPlayer().get(0), numdado);
+
 						} else if (resultado1 == false) {
 
 							view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
@@ -184,6 +191,11 @@ public class Controller {
 						}
 
 					}
+
+					if (classParchis.getPlayer().get(1) != null) {
+
+					}
+					// JUGADOR2
 
 					String jugador2 = view.pressEnter("\nJugador 2, para tirar el dado presione ENTER");
 					boolean resultado2 = classDados.resultadoDados();
@@ -193,6 +205,12 @@ public class Controller {
 						if (resultado2 == true) {
 
 							view.showResults("\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+
+							view.pressEnter("\nJugador 2, presione ENTER para mover la ficha");
+							int numdado = classDados.getTotal();
+							System.out.println("El total de los dados es: " + classDados.ValorDados());
+							classParchis.MovePlayer(classParchis.getPlayer().get(1), numdado);
+
 						} else if (resultado2 == false) {
 
 							view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
@@ -203,11 +221,13 @@ public class Controller {
 				}
 			}
 
+			// CASO DE QUE HAYAN 3 JUGADORES
 			if (resultQuantityPlayers == 3) {
 
 				int player1 = view.chooseColour(
 						"Escoja el color del primer jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
+				// JUGADOR1
 				if (player1 == 1) {
 
 					pColour = "Amarillo";
@@ -220,6 +240,7 @@ public class Controller {
 
 					System.out.println(classParchis.mostrarJugador());
 				}
+				
 				if (player1 == 2) {
 
 					pColour = "Rojo";
@@ -257,7 +278,14 @@ public class Controller {
 
 					System.out.println(classParchis.mostrarJugador());
 				}
-
+				
+				
+				
+				
+				
+				
+				
+				//JUGADOR2
 				int player2 = view.chooseColour(
 						"Escoja el color del segundo jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -337,7 +365,14 @@ public class Controller {
 				if (player1 == player2) {
 					view.showResults("ERROR: Debe reiniciar el juego");
 				} else {
-
+					
+					
+					
+					
+					
+					
+					
+					//JUGADOR3
 					int player3 = view.chooseColour(
 							"Escoja el color del tercer jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -389,6 +424,7 @@ public class Controller {
 							System.out.println(classParchis.mostrarJugador());
 						}
 					}
+
 
 					if (player3 == 4) {
 
@@ -421,6 +457,13 @@ public class Controller {
 
 								view.showResults(
 										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								
+								view.pressEnter("\nJugador 1, presione ENTER para mover la ficha");
+								int numdado = classDados.getTotal();
+								System.out.println("El total de los dados es: " + classDados.ValorDados());
+								classParchis.MovePlayer(classParchis.getPlayer().get(0), numdado);
+								
+								
 							} else if (resultado1 == false) {
 
 								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
@@ -438,6 +481,12 @@ public class Controller {
 
 								view.showResults(
 										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								
+								view.pressEnter("\nJugador 2, presione ENTER para mover la ficha");
+								int numdado = classDados.getTotal();
+								System.out.println("El total de los dados es: " + classDados.ValorDados());
+								classParchis.MovePlayer(classParchis.getPlayer().get(1), numdado);
+								
 							} else if (resultado2 == false) {
 
 								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
@@ -455,6 +504,12 @@ public class Controller {
 
 								view.showResults(
 										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								
+								view.pressEnter("\nJugador 3, presione ENTER para mover la ficha");
+								int numdado = classDados.getTotal();
+								System.out.println("El total de los dados es: " + classDados.ValorDados());
+								classParchis.MovePlayer(classParchis.getPlayer().get(2), numdado);
+								
 							} else if (resultado3 == false) {
 
 								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
@@ -465,8 +520,18 @@ public class Controller {
 					}
 				}
 			}
+			
+			
+			
+			
+			
+			
+			//CASO QUE HAYAN 4 JUGADORES
 			if (resultQuantityPlayers == 4) {
-
+				
+				
+				
+				//JUGADOR1
 				int player1 = view.chooseColour(
 						"Escoja el color del primer jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -519,7 +584,11 @@ public class Controller {
 
 					System.out.println(classParchis.mostrarJugador());
 				}
-
+				
+				
+				
+				
+				//JUGADOR2
 				int player2 = view.chooseColour(
 						"Escoja el color del segundo jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -592,6 +661,11 @@ public class Controller {
 				if (player1 == player2) {
 					view.showResults("ERROR: Debe reiniciar el juego");
 				} else {
+					
+					
+					
+					
+					//JUGADOR3
 					int player3 = view.chooseColour(
 							"Escoja el color del tercer jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -665,6 +739,12 @@ public class Controller {
 						view.showResults("ERROR: Debe reiniciar el juego");
 
 					} else {
+						
+						
+						
+						
+						
+						//JUGADOR4
 						int player4 = view.chooseColour(
 								"Escoja el color del cuarto jugador \n (1) Amarillo \n (2) Rojo \n (3) Azul \n (4) Verde");
 
@@ -748,6 +828,12 @@ public class Controller {
 
 									view.showResults(
 											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+									
+									view.pressEnter("\nJugador 1, presione ENTER para mover la ficha");
+									int numdado = classDados.getTotal();
+									System.out.println("El total de los dados es: " + classDados.ValorDados());
+									classParchis.MovePlayer(classParchis.getPlayer().get(0), numdado);
+									
 								} else if (resultado1 == false) {
 
 									view.showResults(
@@ -766,6 +852,12 @@ public class Controller {
 
 									view.showResults(
 											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+									
+									view.pressEnter("\nJugador 2, presione ENTER para mover la ficha");
+									int numdado = classDados.getTotal();
+									System.out.println("El total de los dados es: " + classDados.ValorDados());
+									classParchis.MovePlayer(classParchis.getPlayer().get(1), numdado);
+									
 								} else if (resultado2 == false) {
 
 									view.showResults(
@@ -784,6 +876,12 @@ public class Controller {
 
 									view.showResults(
 											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+									
+									view.pressEnter("\nJugador 3, presione ENTER para mover la ficha");
+									int numdado = classDados.getTotal();
+									System.out.println("El total de los dados es: " + classDados.ValorDados());
+									classParchis.MovePlayer(classParchis.getPlayer().get(2), numdado);
+									
 								} else if (resultado3 == false) {
 
 									view.showResults(
@@ -802,6 +900,12 @@ public class Controller {
 
 									view.showResults(
 											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+									
+									view.pressEnter("\nJugador 4, presione ENTER para mover la ficha");
+									int numdado = classDados.getTotal();
+									System.out.println("El total de los dados es: " + classDados.ValorDados());
+									classParchis.MovePlayer(classParchis.getPlayer().get(3), numdado);
+									
 								} else if (resultado4 == false) {
 
 									view.showResults(

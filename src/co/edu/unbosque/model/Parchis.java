@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class Parchis {
 
 	private ArrayList<Player> arrayPlayer = new ArrayList<Player>();
+	public Player player;
 
 	public Parchis() {
 
@@ -44,6 +45,20 @@ public class Parchis {
 
 		return lista;
 
+	}
+	
+    public void MovePlayer(Player player,int NumDado) {  	
+    	int pos_actual = player.getCountingDice();
+    	int new_pos = pos_actual + NumDado;
+    	if(new_pos>68) {
+    		new_pos = new_pos-68;
+    	}
+    	else {
+    		
+    	player.setCountingDice(new_pos);
+    	
+    	}
+    	System.out.println("posición de la ficha actual: "+player.getCountingDice());
 	}
 	
 	
