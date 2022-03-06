@@ -44,7 +44,7 @@ public class Controller {
 
 					pColour = "Amarillo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -56,7 +56,7 @@ public class Controller {
 
 					pColour = "Rojo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -64,7 +64,7 @@ public class Controller {
 
 					System.out.println(classParchis.mostrarJugador());
 
-				} else if (player1 == 3) {
+				} else if (player1 == 0) {
 
 					pColour = "Azul";
 
@@ -77,7 +77,7 @@ public class Controller {
 					System.out.println(classParchis.mostrarJugador());
 				}
 
-				else if (player1 == 4) {
+				else if (player1 == 0) {
 
 					pColour = "Verde";
 
@@ -100,7 +100,7 @@ public class Controller {
 					} else {
 						pColour = "Amarillo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -117,7 +117,7 @@ public class Controller {
 
 						pColour = "Rojo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -133,7 +133,7 @@ public class Controller {
 					} else {
 						pColour = "Azul";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -150,7 +150,7 @@ public class Controller {
 					} else {
 						pColour = "Verde";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -175,7 +175,7 @@ public class Controller {
 
 					pColour = "Amarillo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -187,7 +187,7 @@ public class Controller {
 
 					pColour = "Rojo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -199,7 +199,7 @@ public class Controller {
 
 					pColour = "Azul";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -212,7 +212,7 @@ public class Controller {
 
 					pColour = "Verde";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -231,7 +231,7 @@ public class Controller {
 					} else {
 						pColour = "Amarillo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -250,7 +250,7 @@ public class Controller {
 
 						pColour = "Rojo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -268,7 +268,7 @@ public class Controller {
 
 						pColour = "Azul";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -286,7 +286,7 @@ public class Controller {
 					} else {
 						pColour = "Verde";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -311,7 +311,7 @@ public class Controller {
 						} else {
 							pColour = "Amarillo";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -327,7 +327,7 @@ public class Controller {
 						} else {
 							pColour = "Rojo";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -343,7 +343,7 @@ public class Controller {
 						} else {
 							pColour = "Azul";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -360,7 +360,7 @@ public class Controller {
 						} else {
 							pColour = "Verde";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -384,7 +384,7 @@ public class Controller {
 
 					pColour = "Amarillo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -396,7 +396,7 @@ public class Controller {
 
 					pColour = "Rojo";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -408,7 +408,7 @@ public class Controller {
 
 					pColour = "Azul";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -421,7 +421,7 @@ public class Controller {
 
 					pColour = "Verde";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -440,7 +440,7 @@ public class Controller {
 					} else {
 						pColour = "Amarillo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -456,7 +456,7 @@ public class Controller {
 					} else {
 						pColour = "Rojo";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -472,7 +472,7 @@ public class Controller {
 					} else {
 						pColour = "Azul";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -489,7 +489,7 @@ public class Controller {
 					} else {
 						pColour = "Verde";
 
-						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+						Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 17);
 
 						String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -512,7 +512,7 @@ public class Controller {
 						} else {
 							pColour = "Amarillo";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -528,7 +528,7 @@ public class Controller {
 						} else {
 							pColour = "Rojo";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -544,7 +544,7 @@ public class Controller {
 						} else {
 							pColour = "Azul";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -561,7 +561,7 @@ public class Controller {
 						} else {
 							pColour = "Verde";
 
-							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+							Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 34);
 
 							String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -585,7 +585,7 @@ public class Controller {
 							} else {
 								pColour = "Amarillo";
 
-								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 51);
 
 								String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -601,7 +601,7 @@ public class Controller {
 							} else {
 								pColour = "Rojo";
 
-								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 51);
 
 								String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -617,7 +617,7 @@ public class Controller {
 							} else {
 								pColour = "Azul";
 
-								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 51);
 
 								String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -634,11 +634,10 @@ public class Controller {
 							} else {
 								pColour = "Verde";
 
-								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+								Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 51);
 
 								String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
-								
 								System.out.println(mensajeFinal);
 
 								System.out.println(classParchis.mostrarJugador());

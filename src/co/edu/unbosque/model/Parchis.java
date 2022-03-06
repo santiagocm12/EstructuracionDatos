@@ -11,7 +11,6 @@ public class Parchis {
 
 	}
 
-	
 	public Parchis(ArrayList<Player> player) {
 		super();
 		this.arrayPlayer = player;
@@ -40,13 +39,14 @@ public class Parchis {
 		lista = lista + "";
 
 		for (int i = 0; i < this.arrayPlayer.size(); i++) {
-			lista = lista + "Jugador: " + (i + 1) +  "  -  Color: " + this.arrayPlayer.get(i).getColour()
-					+ "         " + this.arrayPlayer.get(i).getCountingDice() + "\n";
+			lista = lista + "Jugador: " + (i + 1) + "  -  Color: " + this.arrayPlayer.get(i).getColour() + "\n";
 		}
 
 		return lista;
 
 	}
+	
+	
 
 	public ArrayList<Player> getPlayer() {
 		return arrayPlayer;
