@@ -1,22 +1,38 @@
 package co.edu.unbosque.view;
 
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class View {
-	
-	public void mostrarResultados(String dato) {
-		JOptionPane.showMessageDialog(null, dato);
+
+	public int quantityPlayers() {
+
+		System.out.println("¿Cuantos participantes jugaran?");
+		Scanner sc = new Scanner(System.in);
+		int quantity = sc.nextInt();
+
+		return quantity;
+
 	}
-	
-	public String pedirDato() {
-		String dato = "";
-		dato = JOptionPane.showInputDialog(null, "Entre Dato:");
-		return dato;
+
+	public void showResults(String dato) {
+		System.out.println(dato);
+
 	}
-	
-	public int pedirDatoEntero() {
-		int numero = 0;
-		numero = Integer.parseInt(JOptionPane.showInputDialog(null,"Entre Nùmero:"));
-		return numero;
+
+//	
+	public int chooseColour(String dato) {
+		System.out.println(dato);
+
+		Scanner sc = new Scanner(System.in);
+		int colour = sc.nextInt();
+		return colour;
 	}
+//	
+//	public int pedirDatoEntero() {
+//		int numero = 0;
+//		numero = Integer.parseInt(JOptionPane.showInputDialog(null,"Entre Nùmero:"));
+//		return numero;
+//	}
 }
