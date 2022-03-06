@@ -11,6 +11,7 @@ public class Parchis {
 
 	}
 
+	
 	public Parchis(ArrayList<Player> player) {
 		super();
 		this.arrayPlayer = player;
