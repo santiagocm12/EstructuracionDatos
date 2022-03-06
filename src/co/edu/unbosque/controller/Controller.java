@@ -28,6 +28,7 @@ public class Controller {
 	}
 
 	public void function() {
+		
 
 		int resultQuantityPlayers = view.quantityPlayers();
 		int counter1 = 0;
