@@ -1,6 +1,7 @@
 package co.edu.unbosque.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Parchis {
 
@@ -25,38 +26,27 @@ public class Parchis {
 		return objectPlayer;
 	}
 
-	
-	
-	
 	public String addPlayer(Player addplayer) {
 
-		
-		
 		arrayPlayer.add(addplayer);
 
 		return "Se agregó correctamente la ficha.";
 	}
 
-	
-	
-	
 	public String mostrarJugador() {
 
 		String lista = "Se ha(n) creado " + this.arrayPlayer.size() + " jugador(es) \n";
 		lista = lista + "";
 
-		
 		for (int i = 0; i < this.arrayPlayer.size(); i++) {
-			lista = lista + "Jugador " + "( " + this.arrayPlayer.size() + " )  Color: " +  this.arrayPlayer.get(i).getColour() + "         " + this.arrayPlayer.get(i).getCountingDice() +"\n";
+			lista = lista + "Jugador: " + (i + 1) +  "  -  Color: " + this.arrayPlayer.get(i).getColour()
+					+ "         " + this.arrayPlayer.get(i).getCountingDice() + "\n";
 		}
-		
+
 		return lista;
 
 	}
-	
-	
-	
-	
+
 	public ArrayList<Player> getPlayer() {
 		return arrayPlayer;
 	}
