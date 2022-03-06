@@ -64,11 +64,11 @@ public class Controller {
 
 					System.out.println(classParchis.mostrarJugador());
 
-				} else if (player1 == 0) {
+				} else if (player1 == 3) {
 
 					pColour = "Azul";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
@@ -77,11 +77,11 @@ public class Controller {
 					System.out.println(classParchis.mostrarJugador());
 				}
 
-				else if (player1 == 0) {
+				else if (player1 == 4) {
 
 					pColour = "Verde";
 
-					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 3);
+					Player objectPlayer = this.classParchis.createObjectPlayer(pColour, 0);
 
 					String mensajeFinal = this.classParchis.addPlayer(objectPlayer);
 
