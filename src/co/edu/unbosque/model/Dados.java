@@ -5,29 +5,48 @@ public class Dados {
 	private int number2;
 	private int total;
 	private boolean par;
-	
+
 	public Dados() {
-		this.number1 = (int) Math.floor(Math.random()*6+1);;
-		this.number2 = (int) Math.floor(Math.random()*6+1);;
-		this.total = number1+number2;
+
+//		NumPar();
+//		resultadoDados();
+	}
+
+	public boolean resultadoDados() {
+
+		boolean resultado = false;
+		
+		this.number1 = (int) Math.floor(Math.random() * 6 + 1);
+		;
+		this.number2 = (int) Math.floor(Math.random() * 6 + 1);
+		;
+		this.total = number1 + number2;
 		System.out.println(number1);
 		System.out.println(number2);
-		System.out.println("Total de los dados es: "+total);
-		System.out.println(NumPar());
-		NumPar();
+		System.out.println("Total de los dados es: " + total);
+
+		if (NumPar() == false) {
+			resultado=false;
+
+		} else if (NumPar() == true) {
+			resultado=true;
+
+		}
+		
+		return resultado;
+
 	}
-	
+
 	public boolean NumPar() {
-		if (number1==number2) {
+		if (number1 == number2) {
 			par = true;
 			return par;
-		}
-		else {
+		} else {
 			par = false;
-		return par;
-		
-	  }
-   }
+			return par;
+
+		}
+	}
 
 	public int getNumber1() {
 		return number1;
@@ -60,7 +79,5 @@ public class Dados {
 	public void setPar(boolean par) {
 		this.par = par;
 	}
-	
-	
-	
+
 }

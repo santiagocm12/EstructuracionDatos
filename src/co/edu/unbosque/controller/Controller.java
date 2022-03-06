@@ -3,6 +3,7 @@ package co.edu.unbosque.controller;
 import java.util.ArrayList;
 
 import co.edu.unbosque.model.ClaseX;
+import co.edu.unbosque.model.Dados;
 import co.edu.unbosque.model.Parchis;
 import co.edu.unbosque.model.Player;
 import co.edu.unbosque.view.View;
@@ -14,16 +15,19 @@ public class Controller {
 	private Player classPlayer;
 	public ArrayList<Player> arrayPlayer;
 	private String pColour;
+	private Dados classDados;
 
 	public Controller() {
 
 		view = new View();
 		classParchis = new Parchis();
 		classPlayer = new Player();
+		classDados = new Dados();
 
 		this.arrayPlayer = new ArrayList<Player>();
 
 		function();
+//		functionDice();
 	}
 
 	public void function() {
@@ -162,8 +166,41 @@ public class Controller {
 				}
 				if (player1 == player2) {
 					view.showResults("ERROR: Debe reiniciar el juego");
-				}
+				} else {
 
+					String jugador1 = view.pressEnter("\nJugador 1, para tirar el dado presione ENTER");
+
+					boolean resultado1 = classDados.resultadoDados();
+
+					if (jugador1.isEmpty()) {
+
+						if (resultado1 == true) {
+
+							view.showResults("\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+						} else if (resultado1 == false) {
+
+							view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+						}
+
+					}
+
+					String jugador2 = view.pressEnter("\nJugador 2, para tirar el dado presione ENTER");
+					boolean resultado2 = classDados.resultadoDados();
+
+					if (jugador2.isEmpty()) {
+
+						if (resultado2 == true) {
+
+							view.showResults("\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+						} else if (resultado2 == false) {
+
+							view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+						}
+
+					}
+				}
 			}
 
 			if (resultQuantityPlayers == 3) {
@@ -372,6 +409,59 @@ public class Controller {
 
 					if (player1 == player3 || player2 == player3) {
 						view.showResults("ERROR: Debe reiniciar el juego");
+					} else {
+
+						String jugador1 = view.pressEnter("\nJugador 1, para tirar el dado presione ENTER");
+
+						boolean resultado1 = classDados.resultadoDados();
+
+						if (jugador1.isEmpty()) {
+
+							if (resultado1 == true) {
+
+								view.showResults(
+										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+							} else if (resultado1 == false) {
+
+								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+							}
+
+						}
+
+						String jugador2 = view.pressEnter("\nJugador 2, para tirar el dado presione ENTER");
+						boolean resultado2 = classDados.resultadoDados();
+
+						if (jugador2.isEmpty()) {
+
+							if (resultado2 == true) {
+
+								view.showResults(
+										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+							} else if (resultado2 == false) {
+
+								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+							}
+
+						}
+
+						String jugador3 = view.pressEnter("\nJugador 3, para tirar el dado presione ENTER");
+						boolean resultado3 = classDados.resultadoDados();
+
+						if (jugador3.isEmpty()) {
+
+							if (resultado3 == true) {
+
+								view.showResults(
+										"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+							} else if (resultado3 == false) {
+
+								view.showResults("\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+							}
+
+						}
 					}
 				}
 			}
@@ -646,6 +736,80 @@ public class Controller {
 
 						if (player1 == player4 || player2 == player4 || player3 == player4) {
 							view.showResults("ERROR: Debe reiniciar el juego");
+						} else {
+
+							String jugador1 = view.pressEnter("\nJugador 1, para tirar el dado presione ENTER");
+
+							boolean resultado1 = classDados.resultadoDados();
+
+							if (jugador1.isEmpty()) {
+
+								if (resultado1 == true) {
+
+									view.showResults(
+											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								} else if (resultado1 == false) {
+
+									view.showResults(
+											"\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+								}
+
+							}
+
+							String jugador2 = view.pressEnter("\nJugador 2, para tirar el dado presione ENTER");
+							boolean resultado2 = classDados.resultadoDados();
+
+							if (jugador2.isEmpty()) {
+
+								if (resultado2 == true) {
+
+									view.showResults(
+											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								} else if (resultado2 == false) {
+
+									view.showResults(
+											"\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+								}
+
+							}
+
+							String jugador3 = view.pressEnter("\nJugador 3, para tirar el dado presione ENTER");
+							boolean resultado3 = classDados.resultadoDados();
+
+							if (jugador3.isEmpty()) {
+
+								if (resultado3 == true) {
+
+									view.showResults(
+											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								} else if (resultado3 == false) {
+
+									view.showResults(
+											"\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+								}
+
+							}
+
+							String jugador4 = view.pressEnter("\nJugador 4, para tirar el dado presione ENTER");
+							boolean resultado4 = classDados.resultadoDados();
+
+							if (jugador4.isEmpty()) {
+
+								if (resultado4 == true) {
+
+									view.showResults(
+											"\nEl resultado de los dados es par. La ficha puede salir de la carcel");
+								} else if (resultado4 == false) {
+
+									view.showResults(
+											"\nEl resultado de los dados no es par. No puede salir de la carcel");
+
+								}
+
+							}
 						}
 					}
 				}
@@ -656,10 +820,7 @@ public class Controller {
 			view.showResults("Debe seleccionar una cantidad entre 2 y 4 jugadores \nERROR: Reinicie el juego");
 
 		}
-		
-		
 
 	}
-	
-	
+
 }

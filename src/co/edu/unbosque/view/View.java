@@ -29,6 +29,14 @@ public class View {
 		int colour = sc.nextInt();
 		return colour;
 	}
+	
+	public String pressEnter(String dato) {
+		System.out.println(dato);
+
+		Scanner sc = new Scanner(System.in);
+		String pressEnter = sc.nextLine();
+		return pressEnter;
+	}
 //	
 //	public int pedirDatoEntero() {
 //		int numero = 0;
