@@ -656,6 +656,10 @@ public class Controller {
 			view.showResults("Debe seleccionar una cantidad entre 2 y 4 jugadores \nERROR: Reinicie el juego");
 
 		}
+		
+		
 
 	}
+	
+	
 }
