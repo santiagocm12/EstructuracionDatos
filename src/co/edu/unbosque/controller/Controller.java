@@ -9,6 +9,7 @@ import co.edu.unbosque.view.View;
 
 public class Controller {
 
+	
 	private View view;
 	private Parchis classParchis;
 	private Player classPlayer;
