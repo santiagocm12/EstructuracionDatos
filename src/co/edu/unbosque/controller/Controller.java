@@ -2,7 +2,6 @@ package co.edu.unbosque.controller;
 
 import java.util.ArrayList;
 
-import co.edu.unbosque.model.ClaseX;
 import co.edu.unbosque.model.Dados;
 import co.edu.unbosque.model.Parchis;
 import co.edu.unbosque.model.Player;
@@ -34,7 +33,7 @@ public class Controller {
 
 		int resultQuantityPlayers = view.quantityPlayers();
 		int counter1 = 0;
-
+		
 		if (resultQuantityPlayers == 2 || resultQuantityPlayers == 3 || resultQuantityPlayers == 4) {
 
 			view.showResults("Se han agregado " + "( " + resultQuantityPlayers + " ) jugadores");
